@@ -4,6 +4,9 @@ dotenv.config();
 const app = express();
 
 
+const adminRoute = require('./routes/adminRoute')
+
+app.use('/admin',adminRoute)
 
 
 // Start the server
